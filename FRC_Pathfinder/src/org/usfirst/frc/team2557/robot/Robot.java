@@ -26,7 +26,7 @@ import org.usfirst.frc.team2557.robot.subsystems.PathSub;
 public class Robot extends TimedRobot {
 	public static OI m_oi;
 	public static PathSub psub;
-
+	// need to finish for the lift
 	Command m_autonomousCommand;
 	Command AutoCommmandGroup;
 	Command PathComm;
@@ -42,6 +42,7 @@ public class Robot extends TimedRobot {
 	@Override
 	public void robotInit() {
 		RobotMap.init();
+		// initiate the lift
 		psub = new PathSub();
 		m_oi = new OI();
 //		OI.init();
