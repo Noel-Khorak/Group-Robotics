@@ -19,7 +19,7 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
  */
 public class RobotMap {
 
-	public static WPI_TalonSRX frontLeft, backLeft, frontRight, backRight, inLeft, inRight;
+	public static WPI_TalonSRX frontLeft, backLeft, frontRight, backRight, inLeft, inRight, lift1, lift2;
 	
 	public static SpeedControllerGroup leftSpeed, rightSpeed;
 	
@@ -32,6 +32,8 @@ public class RobotMap {
 		backRight = new WPI_TalonSRX(2);
 		inLeft = new WPI_TalonSRX(4);
 		inRight = new WPI_TalonSRX(6);
+		lift1 = new WPI_TalonSRX(5);
+		lift2 = new WPI_TalonSRX(11);
 		leftSpeed = new SpeedControllerGroup(frontLeft, backLeft);
 		rightSpeed = new SpeedControllerGroup(frontRight, backRight);
 		diffDrive = new DifferentialDrive(leftSpeed, rightSpeed);
